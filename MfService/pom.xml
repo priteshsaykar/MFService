@@ -50,8 +50,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		
-			<directory>${project.basedir}/target</directory>
+
+		<directory>${project.basedir}/target</directory>
 
 	</build>
 
