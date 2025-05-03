@@ -22,7 +22,7 @@ jobs:
  
       - name: Build and test with Maven
         run: mvn clean install
-       
+        working-directory: ./MfService
 
       - name: Print Current Directory
         run: pwd
