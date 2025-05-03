@@ -19,4 +19,4 @@ jobs:
           docker build -t mfservice-image-name .
           docker tag mfservice-image-name priteshsaykar/mfservice-image-name:latest
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push your-docker-hub-user/your-image-name:latest
+          docker push priteshsaykar/mfservice-image-name:latest
