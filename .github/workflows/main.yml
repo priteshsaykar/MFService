@@ -31,7 +31,7 @@ jobs:
 
 
       - name: Verify Maven Output
-        run: ls -lh target/
+        run: ls -lh /home/runner/work/MFService/MFService/MfService/target/
 
 
       - name: Build and Push Docker Image
