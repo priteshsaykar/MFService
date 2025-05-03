@@ -16,7 +16,7 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t mfservice-image-name -f ./MfService/DockerFile .
+          docker build -t mfservice-image-name -f ./MfService/Dockerfile .
           docker tag mfservice-image-name priteshsaykar/mfservice-image-name:latest
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
           docker push priteshsaykar/mfservice-image-name:latest
