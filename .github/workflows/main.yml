@@ -30,7 +30,6 @@ jobs:
  
       - name: Build and test with Maven
         run: mvn clean install
-             ls -lh target/  # Verify JAR exists
         working-directory: ./MfService
 
       - name: Build and Push Docker Image
