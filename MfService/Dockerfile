@@ -2,7 +2,8 @@
 FROM openjdk:17-jdk-slim
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /home/runner/work/MFService/MFService/MfService
+
 
 # Copy the built JAR file into the container
 COPY /home/runner/work/MFService/MFService/MfService/target/*.jar app.jar
