@@ -1,5 +1,3 @@
-DOCKER_BUILDKIT=0 docker build .
-
 # Use official OpenJDK image
 FROM openjdk:17-jdk-slim
 
