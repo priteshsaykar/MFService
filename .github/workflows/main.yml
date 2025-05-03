@@ -24,6 +24,13 @@ jobs:
         run: mvn clean install
         working-directory: ./MfService
 
+      - name: Print Current Directory
+        run: pwd
+
+      - name: Verify Maven Output
+        run: ls -lh target/
+
+
       - name: Build and Push Docker Image
         run: |
           docker build -t mfservice-image-name -f ./MfService/Dockerfile .
