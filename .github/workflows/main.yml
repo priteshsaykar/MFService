@@ -26,6 +26,9 @@ jobs:
 
       - name: Print Current Directory
         run: pwd
+      - name: Debug Repository Structure
+        run: ls -lhR /home/runner/work/${{ github.event.repository.name }}/
+
 
       - name: Verify Maven Output
         run: ls -lh target/
