@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built JAR file into the container
-COPY /home/runner/work/MFService/MFService/target/*.jar app.jar
+COPY /home/runner/work/MFService/MFService/MfService/target/*.jar app.jar
 
 # Expose the port the application runs on
 EXPOSE 8080
